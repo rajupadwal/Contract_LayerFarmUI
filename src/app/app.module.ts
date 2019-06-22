@@ -28,6 +28,7 @@ import { AuthService } from "./services/auth.service";
 import { ValidationBorderModule } from './validation-border';
 
 
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -58,7 +59,8 @@ import { ValidationBorderModule } from './validation-border';
     BreadcrumbsComponent,
     SIDEBAR_TOGGLE_DIRECTIVES,
     AsideToggleDirective,
-    ErrorDirective
+    ErrorDirective,
+
 
   ],
   providers: [

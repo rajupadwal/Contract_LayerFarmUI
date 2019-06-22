@@ -67,7 +67,7 @@
         <li class="divider"></li>
 
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" [routerLink]="['/dailyprogressreport']"><i class="icon-puzzle"></i> Daily Progress Report</a>
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['/CustomerInfo']"><i class="icon-puzzle"></i> Cusotmer Info</a>
         </li>
 
         <!--<li class="nav-item">
@@ -151,6 +151,23 @@
         <li class="nav-title">
           Extras
         </li>-->
+        <li class="nav-item nav-dropdown" appNavDropdown>
+          <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-star"></i> Master</a>
+          <ul class="nav-dropdown-items">
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" [routerLink]="['/master/CustomerInfo']"><i class="icon-star"></i> Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" [routerLink]="['/master/CompanyProfile']"><i class="icon-star"></i> Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" [routerLink]="['/master/LocationMaster']"><i class="icon-star"></i> Error 404</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" [routerLink]="['/master/SupplierMaster']"><i class="icon-star"></i> Error 500</a>
+            </li>
+          </ul>
+        </li>
         <li class="nav-item nav-dropdown" appNavDropdown>
           <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-star"></i> Pages</a>
           <ul class="nav-dropdown-items">

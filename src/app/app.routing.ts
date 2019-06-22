@@ -36,12 +36,43 @@ export const routes: Routes = [
         path: 'dashboard',
         loadChildren: './dashboard/dashboard.module#DashboardModule'
       },
-      
 
       {
-        path: 'dailyprogressreport',
-        loadChildren: './daily-progress-report/daily.progress.report.module#DailyProgressReportModule'
+        path: 'master',
+        component: SimpleLayoutComponent,
+        data: {
+          title: 'Master'
+        },
+        children: [
+          {
+
+            path: 'CustomerInfo',
+            loadChildren: './master/customer-info/customer.info.module#CusotmerInfoModule'
+
+          },
+          {
+
+            path: 'CompanyProfile',
+            loadChildren: './master/customer-info/customer.info.module#CusotmerInfoModule'
+
+          },
+          {
+
+            path: 'LocationMaster',
+            loadChildren: './master/customer-info/customer.info.module#CusotmerInfoModule'
+
+          },
+          {
+
+            path: 'SupplierMaster',
+            loadChildren: './master/customer-info/customer.info.module#CusotmerInfoModule'
+
+          },
+         
+        ]
       },
+
+
 
       //{
       //  path: 'cases',
@@ -92,11 +123,11 @@ export const routes: Routes = [
       //}
     ]
   },
-  
+
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
-  exports: [ RouterModule ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
