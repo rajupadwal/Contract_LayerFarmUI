@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\daily-progress-report",
+    "\\src\\app\\daily-progress-report\\add-daily-progress-report",
+    "\\src\\app\\models",
+    "\\src\\app\\pages",
+    "\\src\\app\\services"
+  ],
+  "SelectedNode": "\\src\\app\\daily-progress-report\\add-daily-progress-report\\add-daily-progress-report.component.ts",
+  "PreviewInSolutionExplorer": false
+}
